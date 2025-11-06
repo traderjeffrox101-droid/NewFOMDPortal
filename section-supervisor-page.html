@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section Supervisor Dashboard - FOMD Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">FOMD <span>Portal</span></div>
+            <div class="header-info">
+                <div id="current-datetime" class="datetime"></div>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="btn btn-secondary">
+                    <i class="fas fa-arrow-left"></i> Back to Main
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="dashboard">
+            <div class="dashboard-header">
+                <div>
+                    <h2>Section Supervisor Dashboard</h2>
+                    <p class="welcome-message">Welcome, Section Supervisor!</p>
+                    <p class="user-level">Access Level: <span class="user-level-badge level-section-supervisor">Section Supervisor</span></p>
+                </div>
+            </div>
+
+            <div class="user-cards">
+                <div class="user-card">
+                    <h3><i class="fas fa-tools"></i> Maintenance Oversight</h3>
+                    <p>Monitor and manage maintenance activities in your section</p>
+                    <button class="btn btn-primary">View Maintenance</button>
+                </div>
+                <div class="user-card">
+                    <h3><i class="fas fa-clipboard-list"></i> Work Orders</h3>
+                    <p>Create and track maintenance work orders</p>
+                    <button class="btn btn-primary">Manage Work Orders</button>
+                </div>
+                <div class="user-card">
+                    <h3><i class="fas fa-users"></i> Team Management</h3>
+                    <p>Manage your team's schedules and assignments</p>
+                    <button class="btn btn-primary">Team Dashboard</button>
+                </div>
+            </div>
+
+            <div class="dashboard-section">
+                <h3 class="section-title">Active Work Orders</h3>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Work Order #</th>
+                                <th>Equipment</th>
+                                <th>Priority</th>
+                                <th>Assigned To</th>
+                                <th>Start Date</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>WO-2023-0456</td>
+                                <td>PF1 Conveyor System</td>
+                                <td><span class="status-badge status-pending">High</span></td>
+                                <td>Maintenance Team A</td>
+                                <td>2023-10-25</td>
+                                <td><span class="status-badge status-pending">In Progress</span></td>
+                                <td>
+                                    <button class="btn btn-primary btn-small">Update</button>
+                                    <button class="btn btn-secondary btn-small">Details</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>WO-2023-0457</td>
+                                <td>Water Treatment Unit</td>
+                                <td><span class="status-badge status-approved">Medium</span></td>
+                                <td>Maintenance Team B</td>
+                                <td>2023-10-24</td>
+                                <td><span class="status-badge status-approved">Completed</span></td>
+                                <td>
+                                    <button class="btn btn-primary btn-small">Review</button>
+                                    <button class="btn btn-secondary btn-small">Close</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Initialize datetime
+        function updateDateTime() {
+            const now = new Date();
+            const options = { 
+                weekday: 'long', 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit'
+            };
+            document.getElementById('current-datetime').textContent = now.toLocaleDateString('en-US', options);
+        }
+
+        setInterval(updateDateTime, 1000);
+        updateDateTime();
+    </script>
+</body>
+</html>
