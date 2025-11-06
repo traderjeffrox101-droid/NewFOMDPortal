@@ -1,43 +1,76 @@
 {
   "personnel": [
     {
-      "familyName": "CARLOBOS",
-      "firstName": "CARL",
-      "middleName": "N",
-      "idNumber": "123",
-      "dateHired": "2000-01-01",
+      "id": 1,
+      "familyName": "Smith",
+      "firstName": "John",
+      "middleName": "Michael",
+      "idNumber": "EMP001",
+      "dateHired": "2020-01-15",
       "employmentStatus": "Regular",
-      "currentPosition": "Section Supervisor",
+      "currentPosition": "Department Head",
       "workStatus": "Active",
-      "sectionAssignment": "PF2 Line Maintenance",
-      "id": 1
+      "sectionAssignment": "PF1 Line Maintenance"
     },
     {
-      "familyName": "WAMAR",
-      "firstName": "CHARLIE",
-      "middleName": "M",
-      "idNumber": "123456",
-      "dateHired": "2000-01-01",
-      "employmentStatus": "Probationary",
-      "currentPosition": "Process Operator",
-      "workStatus": "Active",
-      "sectionAssignment": "Water Processing Facility",
-      "id": 2
-    },
-    {
-      "familyName": "CASTRO",
-      "firstName": "MARK ANDREI",
-      "middleName": "A",
+      "familyName": "QUEVEDO",
+      "firstName": "NORMAN",
+      "middleName": "B.",
       "idNumber": "123456",
       "dateHired": "2000-01-01",
       "employmentStatus": "Regular",
       "currentPosition": "Assistant Department Head",
       "workStatus": "Active",
-      "sectionAssignment": "PF2 Line Maintenance",
-      "id": 3
+      "sectionAssignment": "PF1 Line Maintenance",
+      "id": 2
     }
   ],
   "users": [
+    {
+      "id": 1,
+      "username": "manager",
+      "password": "manager123",
+      "fullName": "John Manager",
+      "status": "approved",
+      "userLevel": "Manager",
+      "lastLogin": ""
+    },
+    {
+      "id": 2,
+      "username": "assistant",
+      "password": "assistant123",
+      "fullName": "Sarah Assistant",
+      "status": "approved",
+      "userLevel": "Assistant Manager",
+      "lastLogin": ""
+    },
+    {
+      "id": 3,
+      "username": "secretary",
+      "password": "secretary123",
+      "fullName": "David Secretary",
+      "status": "approved",
+      "userLevel": "Secretary",
+      "lastLogin": ""
+    },
+    {
+      "id": 4,
+      "username": "supervisor",
+      "password": "supervisor123",
+      "fullName": "Lisa Supervisor",
+      "status": "approved",
+      "userLevel": "Section Manager",
+      "lastLogin": ""
+    },
+    {
+      "id": 5,
+      "username": "guest",
+      "password": "guest123",
+      "fullName": "Guest User",
+      "status": "approved",
+      "userLevel": "Guest",
+      "lastLogin": ""
+    },
     {
       "id": 999,
       "username": "admin",
@@ -45,54 +78,9 @@
       "fullName": "System Administrator",
       "status": "approved",
       "userLevel": "Administrator",
-      "lastLogin": "2025-11-03"
-    },
-    {
-      "username": "FOMDHEAD",
-      "password": "123456",
-      "fullName": "ARTURO K. CABRAS JR.",
-      "status": "approved",
-      "userLevel": "Manager",
-      "id": 1000,
-      "lastLogin": "2025-11-02"
-    },
-    {
-      "username": "FOMDSEC",
-      "password": "123456",
-      "fullName": "ROCHELLE M. MABALCON",
-      "status": "approved",
-      "userLevel": "Secretary",
-      "id": 1002,
-      "lastLogin": ""
-    },
-    {
-      "username": "FOMDAHEADPF1",
-      "password": "123456",
-      "fullName": "NORMAN B QUEVEDO",
-      "status": "approved",
-      "userLevel": "Assistant Manager",
-      "id": 1003,
-      "lastLogin": ""
-    },
-    {
-      "username": "FOMDAHEADPF2",
-      "password": "123456",
-      "fullName": "JEFFERSON M. PEÑAS",
-      "status": "approved",
-      "userLevel": "Assistant Manager",
-      "id": 1004,
-      "lastLogin": ""
-    },
-    {
-      "username": "FOMDAHEADPF3",
-      "password": "123456",
-      "fullName": "MARK ANDREI CASTRO",
-      "status": "approved",
-      "userLevel": "Assistant Manager",
-      "id": 1005,
       "lastLogin": ""
     }
   ],
-  "exportDate": "2025-11-06T03:03:52.441Z",
+  "exportDate": "2025-11-06T03:47:24.299Z",
   "version": "1.0"
 }
